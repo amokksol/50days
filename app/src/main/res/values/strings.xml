@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">50days</string>
+    <string name="add_button">ADD</string>
+    <string name="text_view_first_screen"> Поставьте себя задачу на 50 дней</string>
+</resources>
