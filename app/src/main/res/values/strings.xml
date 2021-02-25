@@ -2,4 +2,11 @@
     <string name="app_name">50days</string>
     <string name="add_button">ADD</string>
     <string name="text_view_first_screen"> Поставьте себя задачу на 50 дней</string>
+    <string name="text_add_target_text"> Напишите, какую цель вы выбрали</string>
+    <string name="text_change_or_target"> 50 дней ....</string>
+    <string name="text_change_or_target_yes"> Я буду</string>
+    <string name="text_change_or_target_no"> Я НЕ буду</string>
+    <string name="add_target_text_view"> Ваша цель</string>
+
+
 </resources>
