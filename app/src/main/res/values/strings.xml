@@ -7,6 +7,9 @@
     <string name="text_change_or_target_yes"> Я буду</string>
     <string name="text_change_or_target_no"> Я НЕ буду</string>
     <string name="add_target_text_view"> Ваша цель</string>
+    <string name="add_data_text_view"> С какого числа будем выполнять</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>
