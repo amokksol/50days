@@ -1,10 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<navigation
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
-    app:startDestination="@layout/first_screen_fragment">
+    app:startDestination="@id/firstScreen">
+    <fragment
+        android:id="@+id/firstScreen"
+        android:name="com.amokksol.a50days.TitleFragment"
+        android:label="first_screen_fragment"
+        tools:layout="@layout/first_screen_fragment">
+        <action
+            android:id="@+id/action_firstScreen_to_changeTarget"
+            app:destination="@id/changeTarget" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/changeTarget"
+        android:label="change_or_target"
+        android:name="com.amokksol.a50days.ChangeData"
+        tools:layout="@layout/change_or_target">
+    </fragment>
+    <fragment>
+
+    </fragment>
 
 
 </navigation>

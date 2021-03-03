@@ -7,13 +7,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+        <!--  делаем хост по умолчанию и откуда брать ресурс навигации-->
         <fragment
-            android:id="@+id/first_screen_fragment_start"
-            android:name="com.amokksol.a50days.TitleFragment"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            />
-
+        android:id="@+id/myNavHostFragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:navGraph="@navigation/navigation"
+        app:defaultNavHost="true" />
     </LinearLayout>
 
 </layout>

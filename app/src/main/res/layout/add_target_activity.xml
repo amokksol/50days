@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<layout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.amokksol.a50days.AddTarget">
+
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
     <TextView
         android:id="@+id/text_add_target"
         android:layout_width="215dp"
@@ -37,3 +41,4 @@
         app:layout_constraintVertical_bias="0.157"
         android:autofillHints="Цель-мель" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

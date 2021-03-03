@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<layout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.amokksol.a50days.ChangeOrTarget">
+
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:id="@+id/changeOrTarget">
 
     <TextView
-        android:id="@+id/text_change_or_target_1"
+        android:id="@+id/text_change_or_target"
         android:layout_width="156dp"
         android:layout_height="62dp"
         android:text="@string/text_change_or_target"
@@ -29,7 +35,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_change_or_target_1"
+        app:layout_constraintTop_toBottomOf="@+id/text_change_or_target"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
@@ -47,3 +53,4 @@
         app:layout_constraintVertical_bias="0.0"
         tools:ignore="UnknownId" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

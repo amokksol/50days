@@ -6,26 +6,24 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.findNavController
 import com.amokksol.a50days.databinding.FirstScreenFragmentBinding
 
 
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-
 class TitleFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
-
 
     override fun onCreateView(
             inflater: LayoutInflater, container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
         //создаем объект привязки фрагмента к перой активности
+        //используем DataBindingUtil
         val binding = DataBindingUtil.inflate<FirstScreenFragmentBinding>(inflater,
                 R.layout.first_screen_fragment, container, false)
+        //реакция на нажатие кнопки добавить цель
+        binding.addButton.setOnClickListener { view:View ->
+            view.findNavController().navigate(R.id.action_firstScreen_to_changeTarget)
+        }
         return binding.root
     }
 }
